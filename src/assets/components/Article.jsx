@@ -12,7 +12,7 @@ const Article = () => {
     const handleSubmit = async (event) => {
     event.preventDefault();
     axios
-    .post('http://localhost:8080/article', { 
+    .post('https://article-ai-backend.onrender.com/article', { 
       url: url,
     })
     .then(({data}) => {

@@ -7,7 +7,7 @@ const QuestionandAnswer = () => {
   const {id} = useParams()
   const [chat, setChat ] = useState([]);
   useEffect(() => {
-    axios.get(`http://localhost:8080/${id}/chat`)
+    axios.get(`https://article-ai-backend.onrender.com/${id}/chat`)
       .then((response) => {
         setChat(response.data);
       })

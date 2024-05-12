@@ -13,7 +13,7 @@ function Question() {
 
   const handleQuestionSubmit = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:8080/${id}/chat`, { question: question })
+    axios.post(`https://article-ai-backend.onrender.com/${id}/chat`, { question: question })
       .then(({ data }) => {
         setChat([...chat, { question: question, answer: data.answer }]);
         setQuestion('');

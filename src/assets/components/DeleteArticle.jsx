@@ -3,7 +3,7 @@ import axios from "axios"
 const DeleteArticle = ({id, onDelete}) => {
     const handleDelete = () => {
         axios
-            .delete(`http://localhost:8080/article/${id}`)
+            .delete(`https://article-ai-backend.onrender.com/article/${id}`)
             .then(responde => {
                 console.log("Article deleted succesfully")
                 onDelete(id);

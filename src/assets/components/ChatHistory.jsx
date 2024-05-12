@@ -10,7 +10,7 @@ function Articulos() {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:8080/article')
+    axios.get('https://article-ai-backend.onrender.com/article')
       .then((response) => {
         setArticulos(response.data);
       })

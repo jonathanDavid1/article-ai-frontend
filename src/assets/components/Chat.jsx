@@ -8,7 +8,7 @@ function Chat() {
   const [summary, setSummary] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/article/${id}`)
+    axios.get(`https://article-ai-backend.onrender.com/article/${id}`)
       .then(({data}) => setSummary(data)) 
       .catch((err) => console.log(err));
   }, [id]);
