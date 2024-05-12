@@ -27,7 +27,7 @@ const handleButtonClick = () => {
   return (
     <main className='relative'>
     <form style={{
-        backgroundImage: `url('../public/bg-urlArticle.jpg')`,
+        backgroundImage: `url('/bg-urlArticle.jpg')`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '100vh',
