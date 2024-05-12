@@ -20,7 +20,8 @@ function Articulos() {
   }, []);
 
   return (
-    <div className="bg-black p-4 grid">
+    <section className="bg-blue-400 h-screen p-4">
+      <h1 className='text-center text-2xl p-2 m-2>History of articles'>History of Articles</h1>
       {articulos.map((articulo, index) => (
         <div key={index} className="bg-blue-200 p-4 my-2 rounded shadow">
           <div className='flex gap-2'>
@@ -30,7 +31,7 @@ function Articulos() {
           <p className="text-gray-700">{articulo.summary}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
